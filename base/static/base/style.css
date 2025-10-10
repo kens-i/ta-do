@@ -1,0 +1,60 @@
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+/* css variables */
+
+:root {
+--primary-font: 'Dosis', sans-serif;
+--secondary-font: 'Space Grotesk', sans-serif;
+--primary-color: #f6e9d8; 
+--secondary-color: #0a523d;
+--highlight-color: #ff902a;
+--highlight-color-dark: #9e470d;
+}
+
+
+/* global styles */
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);    
+    background-color: var(--primary-color);
+    padding-top: 50px;
+}
+
+h1 {    
+    text-align: center;
+    font-weight: 400;
+}
+
+a, p {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Logo Styles */
+.logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 20px;
+    font-size: larger;
+
+}
+
