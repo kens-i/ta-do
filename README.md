@@ -25,7 +25,19 @@
 ## Design & Planning:
 
 ### User Stories
-Write your user stories in this section
+- As a new user, I need to register and log in, so that I can securely access my personal to‑do list.
+- As a user, I want the app to have a clean and intuitive interface, so that using it feels effortless and enjoyable.
+- As a user, I need to create a task, so that I can keep track of things I need to do.
+- As a user, I need to view my list of tasks, so that I can see what I need to do.
+- As a user, I need to update a task, so that I can correct or change its details.
+- As a user, I need to delete a task, so that I can remove items I no longer need.
+- As a user, I need to mark a task as complete, so that I can track my progress.
+- As a user, I need to search my tasks, so that I can quickly find a specific one.
+- As an admin, I need to manage all users and tasks, so that I can maintain the system.
+
+All user stories are included in my project board which which can be accessed by clicking [here](https://github.com/users/kens-i/projects/11).
+![Project Board](base/static/base/images/project-board.png)
+
 ### Wireframes
 Attach wireframes in this section
 ### Agile Methodology
