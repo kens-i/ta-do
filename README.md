@@ -25,6 +25,7 @@
 ## Design & Planning:
 
 ### User Stories
+
 - As a new user, I need to register and log in, so that I can securely access my personal to‑do list.
 - As a user, I want the app to have a clean and intuitive interface, so that using it feels effortless and enjoyable.
 - As a user, I need to create a task, so that I can keep track of things I need to do.
@@ -38,18 +39,31 @@
 All user stories are included in my project board which which can be accessed by clicking [here](https://github.com/users/kens-i/projects/11).
 ![Project Board](base/static/base/images/project-board.png)
 
+---
+
 ### Wireframes
 Attach wireframes in this section
+
+---
+
 ### Agile Methodology
-For my Django-based full-stack web application, I adopted an Agile approach to ensure structured planning, iterative progress, and alignment with user needs. I utilised Github Projects toto create a Kanban board to manage tasks and track development milestones. The web application was broken down into clearly defined user stories, each mapped to specific project goals and functional requirements. To guide prioritisation, I applied the MoSCoW method, which enabled me to distinguish between essential features and enhancements, ensuring that critical functionality was delivered first. From the outset, the focus was on building a Minimum Viable Product (MVP) — a streamlined version of the application that included core features such as user authentication, task creation, and responsive design. This methodology supported a disciplined yet flexible development process, resulting in a user-friendly and purpose-driven application.
+For this Django-based full-stack web application, I adopted an Agile approach to ensure structured planning, iterative progress, and alignment with user needs. I utilised Github Projects toto create a Kanban board to manage tasks and track development milestones. The web application was broken down into clearly defined user stories, each mapped to specific project goals and functional requirements. To guide prioritisation, I applied the MoSCoW method, which enabled me to distinguish between essential features and enhancements, ensuring that critical functionality was delivered first. From the outset, the focus was on building a Minimum Viable Product (MVP) — a streamlined version of the application that included core features such as user authentication, task creation, and responsive design. This methodology supported a disciplined yet flexible development process, resulting in a user-friendly and purpose-driven application.
 
 To access the Kanban board you can click on the link provided in the User Stories section above. I have also provided a screenshot below: (please note this screenshot was taken prior to completing all tasks. All tasks have now been moved to 'Done'.)
 ![Project Board](base/static/base/images/project-board.png)
 
+---
+
 ### Typography
-Explain font you've used for your project
+For this project, I chose Space Grotesk and Dosis as the primary typefaces to reflect the visual identity established in the logo, which I designed in Canva using Neue Machina and 29LT Zawi. Since those original fonts aren’t available on Google Fonts, I selected Space Grotesk for its clean, geometric structure that closely mirrors the modern, technical feel of Neue Machina. Dosis adds a softer, rounded contrast that complements the contemporary tone of 29LT Zawi. Together, these fonts help maintain a cohesive and polished aesthetic across the app, supporting both readability and brand consistency.
+
+---
+
 ### Colour Scheme
 Screenshoot of the colour scheme for your project
+
+---
+
 ### DataBase Diagram
 Image of the database diagram for your project, you can name your database models as well and how they are connected
 
