@@ -187,4 +187,20 @@ This website is deployed to Heroku from a GitHub repository, the following steps
 - Please note that when deploying manually you will have to deploy after each change you make to your repository.
 
 ## Credits
-List of used resources for your website (text, images, snippets of code, projects....)
+This project would not have been possible without the guidance, support, and inspiration I received throughout my learning journey. I would like to show my heartfelt gratitude towards:
+
+Dennis Ivy – Special thanks for his YouTube tutorial “Django To-Do List App with User Registration and Login” and all the supporting documentation that helped shape the foundation of this application.
+
+Code Institute – For their comprehensive LMS content, walkthrough projects, and structured curriculum that provided the backbone of my development skills.
+
+Marko Tot – My dedicated facilitator, whose consistent support and encouragement kept me focused and motivated.
+
+Mark Briscoe – My Technical Support Coach, for his patience and clarity in helping me overcome technical challenges.
+
+Roman Rakic and Tom Cowen – My Coding Coaches, for their insightful feedback and guidance throughout the project. In particular Tom's patience and guidance whist guiding me through the switch from SQLite to PostgreSQL — a moment which taught me that setbacks are part of the process and there’s always a solution if you stay calm and have a passion to keep learning.
+
+The rest of the CI staff – Including cover coaches and behind-the-scenes team members who contributed to a supportive and enriching learning environment.
+
+Both my cohort and our partner cohort – For their camaraderie, collaboration, and mutual support throughout this journey. Each member of both cohorts have contributed to creating a passionate and supportive environment on this course, which I feel very lucky to have been a part of. Special thanks to, my peer and fellow Full-Stack student, Andrew Bullimore for helping me shape the direction of this project, recommending Dennis Ivy, and helping me see the potential in the project from the start.
+
+I am truly grateful for this experience and for everyone who played a part in it — your support, guidance, and encouragement have not only shaped this project, but also helped shape me as a developer. Thank you for being part of this journey.
