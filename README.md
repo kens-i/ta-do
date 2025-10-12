@@ -70,14 +70,68 @@ I selected the colour palette for this project using Figma’s “Looking for in
 Image of the database diagram for your project, you can name your database models as well and how they are connected
 
 ## Features:
-Explain your features on the website,(navigation, pages, links, forms, input fields, CRUD....)
-### Navigation
-### Footer
-### Home-page
-### CRUD
-### Authentication-Authorisation 
+This web application includes a complete set of features designed to support efficient task management through a clean, responsive interface. Built with Django, it offers full CRUD functionality, allowing users to:
+
+- Create new tasks with relevant details
+
+- Read and view a personalized task list
+
+- Update tasks to reflect changes or progress
+
+- Delete tasks when no longer needed
+
+Additional features include:
+
+- A search bar for quickly filtering tasks by keyword
+
+- The ability to mark tasks as complete, helping users track progress visually
+
+- User authentication with secure registration and login
+
+- Admin functionality for managing task data and user accounts
+
+All features were planned and tracked using a GitHub Projects Kanban board, supporting an Agile workflow and ensuring structured, iterative development. The front-end is styled with custom HTML and CSS, following accessibility and UX design principles to deliver a consistent and user-friendly experience across devices.
+
+---
+
 ## Technologies Used
-List of technologies used for your project
+
+### Development & Programming
+- Python – Core programming language used for back-end logic
+- Django – Web framework used to build the application
+- HTML & CSS – For structuring and styling the front-end
+
+### Tools & Workflow
+- Visual Studio Code (VSCode) – Primary code editor
+- Git & GitHub – Version control and repository management
+- GitHub Projects (Kanban board) – Used to plan, prioritise, and track development tasks
+- CI Database Maker – Assisted with database schema planning
+- AI ERD Generator – Used to visualise entity relationships
+
+### Database & Hosting
+- SQLite – Used initially for local development
+- PostgreSQL – Switched to for production deployment
+- Heroku – Platform used to deploy and host the live application
+
+### Design & UI/UX
+- Figma – Used to explore colour palettes and interface inspiration via the “Looking for inspiration” feature
+- Canva – Used to design the logo and establish visual identity
+- Google Fonts – Selected for typography to match branding
+- Balsamiq – Used for wireframing early UI concepts
+
+### AI & Learning Resources
+- Copilot – Assisted with code suggestions and development
+- ChatGPT – Used for problem-solving, documentation support, and planning
+- YouTube Tutorials – Supplemented learning and implementation strategies
+
+### Validation & Standards
+- W3C Validator – Ensured semantic and accessible HTML
+- Jigsaw CSS Validator – Checked CSS for errors and compliance
+- PEP8 Python Validator – Ensured clean, readable, and standardised Python code
+- Google Lighthouse – Audited performance, accessibility, SEO, and best practices for the live site
+
+---
+
 ## Testing
 Important part of your README!!!
 ### Google's Lighthouse Performance
