@@ -45,6 +45,7 @@ class RegisterPage(FormView):
 
 # Create your views here.
 class TaskList(LoginRequiredMixin, ListView):
+    template_name = 'task_list.html'
     model = Task
     context_object_name = 'tasks'
     
