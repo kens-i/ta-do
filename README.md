@@ -42,8 +42,23 @@ All user stories are included in my project board which which can be accessed by
 ---
 
 ### Wireframes
-Attach wireframes in this section
+I used Balsamiq to create wireframes that guided the structure and flow of the interface during planning.
 
+<details><summary>Task List</summary>
+<img src="base/static/base/images/task_list_wf.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="base/static/base/images/register_wf.png">
+</details>
+
+<details><summary>Sign In</summary>
+<img src="base/static/base/images/signin_wf.png">
+</details>
+
+etails><summary>Delete Task Confirmation</summary>
+<img src="base/static/base/images/delete.png">
+</details>
 ---
 
 ### Agile Methodology
