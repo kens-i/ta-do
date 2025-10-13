@@ -3,12 +3,12 @@
 
 <h1>Register</h1>
 
-<form method="POST" class="styled-form">
+<form method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Register">
-    <p>Already have an account? <a href="{% url 'login' %}" id="login">Login</a></p>
-    {% endblock content %}
 </form>
 
 
+<p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+{% endblock content %}
