@@ -16,12 +16,13 @@ from .models import Task
 
 class CustomLoginView(LoginView):
     template_name = 'login.html'
-    fields = '__all__'
     redirect_authenticated_user = True
+    success_url = reverse_lazy('tasks')
 
-    def get_success_url(self):
-        # messages.success(self.request, 'You have successfully logged in')
-        return reverse_lazy('tasks')
+    def form_valid(self, form):
+        messages.success(self.request, "You have successfully logged in!")
+        # call the parent form_valid so LoginView does its redirect handling
+        return super().form_valid(form)
     
     
 class RegisterPage(FormView):
@@ -34,16 +35,15 @@ class RegisterPage(FormView):
         user = form.save()
         if user is not None:
             login(self.request, user)
+            # messages.success(self.request, "You have successfully registered!")
         return super(RegisterPage, self).form_valid(form)
 
     def get(self, *args, **kwargs):
         if self.request.user.is_authenticated:
-            messages.success(self.request, 'You are already registered and logged in')
             return redirect('tasks')
         return super(RegisterPage, self).get(*args, **kwargs)
 
 
-# Create your views here.
 class TaskList(LoginRequiredMixin, ListView):
     template_name = 'task_list.html'
     model = Task
@@ -72,7 +72,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
-   
+    template_name = 'task_form.html'   # <- explicitly use your existing template
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -84,16 +84,16 @@ class TaskUpdate(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
-    success_message = "Task updated successfully"   
+    success_message = "Task updated successfully"
+    template_name = 'task_form.html'   # <- use same form template for updates
     
 
 class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
+    template_name = 'task_confirm_delete.html'  # <- explicitly set delete template
 
-    def delete(self, request, *args, **kwargs):
-        # use self.request for consistency
-        print("DEBUG: Deleting task, adding message", request.user)
-        messages.add_message(request, messages.SUCCESS, "Task deleted succesfully")
-        return super(TaskDelete, self).delete(request, *args, **kwargs)
+    def form_valid(self, form):
+        messages.success(self.request, "The task was deleted successfully.")
+        return super(TaskDelete,self).form_valid(form)
