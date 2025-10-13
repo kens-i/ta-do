@@ -23,33 +23,18 @@ body {
     padding-top: 50px;
 }
 
-.header-bar {
-    text-align: left;
-
+h1, h2 {    
+    font-weight: 400;
 }
 
-h1 {    
-    font-weight: 400;
+h3 {
+    font-weight: 450;
+    color: var(--highlight-color);
 }
 
 a, p {
     color: var(--primary-color);
     text-decoration: none;
-}
-
-/* Logo Styles */
-.logo {
-    display: block;
-    max-width: 200px;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 4px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .container{
@@ -62,3 +47,68 @@ a, p {
 
 }
 
+.header-bar {
+    display: flex;
+    justify-content: space-between; /* pushes logo to the right */
+    align-items: center;             /* vertically centers the items */
+    padding: 10px 20px;
+}
+
+.header-bar a {
+    color: var(--highlight-color);
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid var(--primary-color);
+}
+
+.task-wrapper:hover {
+    background-color: var(--primary-color);
+}
+
+.task-wrapper:hover a,
+.task-wrapper:hover p {
+    color: var(--highlight-color);
+    font-weight: 600;
+}
+
+.task-wrapper:hover s {
+    color: var(--highlight-color);
+}
+
+/* media queries */
+
+/* small devices - phones (600px and down) */
+@media (max-width: 600px) {
+    .header-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .logo {
+        max-width: 150px;
+        order: 2; /* ensures logo comes after the text content */
+    }
+}
+
+/* small devices - phones (320px and up) */
+@media (min-width: 320px) {
+    /* Add mobile-specific styles here if needed */
+}
