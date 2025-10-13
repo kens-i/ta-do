@@ -37,7 +37,7 @@
 - As an admin, I need to manage all users and tasks, so that I can maintain the system.
 
 All user stories are included in my project board which which can be accessed by clicking [here](https://github.com/users/kens-i/projects/11).
-![Project Board](base/static/base/images/project-board.png)
+![Project Board](static/images/project_board.png)
 
 ---
 
@@ -45,19 +45,19 @@ All user stories are included in my project board which which can be accessed by
 I used Balsamiq to create wireframes that guided the structure and flow of the interface during planning.
 
 <details><summary>Task List</summary>
-<img src="base/static/base/images/task_list_wf.png">
+<img src="static/images/task_list_wf.png">
 </details>
 
 <details><summary>Register</summary>
-<img src="base/static/base/images/register_wf.png">
+<img src="static/images/register_wf.png">
 </details>
 
 <details><summary>Sign In</summary>
-<img src="base/static/base/images/signin_wf.png">
+<img src="static/images/signin_wf.png">
 </details>
 
 etails><summary>Delete Task Confirmation</summary>
-<img src="base/static/base/images/delete.png">
+<img src="static/images/delete.png">
 </details>
 ---
 
@@ -65,24 +65,24 @@ etails><summary>Delete Task Confirmation</summary>
 For this Django-based full-stack web application, I adopted an Agile approach to ensure structured planning, iterative progress, and alignment with user needs. I utilised Github Projects toto create a Kanban board to manage tasks and track development milestones. The web application was broken down into clearly defined user stories, each mapped to specific project goals and functional requirements. To guide prioritisation, I applied the MoSCoW method, which enabled me to distinguish between essential features and enhancements, ensuring that critical functionality was delivered first. From the outset, the focus was on building a Minimum Viable Product (MVP) — a streamlined version of the application that included core features such as user authentication, task creation, and responsive design. This methodology supported a disciplined yet flexible development process, resulting in a user-friendly and purpose-driven application.
 
 To access the Kanban board you can click on the link provided in the User Stories section above. I have also provided a screenshot below: (please note this screenshot was taken prior to completing all tasks. All tasks have now been moved to 'Done'.)
-![Project Board](base/static/base/images/project_board.png)
+![Project Board](static/images/project_board.png)
 
 ---
 
 ### Typography
 For this project, I chose Space Grotesk and Dosis as the primary typefaces to reflect the visual identity established in the logo, which I designed in Canva using Neue Machina and 29LT Zawi. Since those original fonts aren’t available on Google Fonts, I selected Space Grotesk for its clean, geometric structure that closely mirrors the modern, technical feel of Neue Machina. Dosis adds a softer, rounded contrast that complements the contemporary tone of 29LT Zawi. Together, these fonts help maintain a cohesive and polished aesthetic across the app, supporting both readability and brand consistency.
-![Typography](base/static/base/images/typography.png)
+![Typography](static//images/typography.png)
 
 ---
 
 ### Colour Scheme
 I selected the colour palette for this project using Figma’s “Looking for inspiration” feature, as I didn’t have a specific image or scheme in mind initially. This helped me explore combinations that felt modern, balanced, and visually appealing. The final colours I chose were also used in the logo, which I designed in Canva, ensuring consistency across the app’s branding. The primary colour #f6e9d8 provides a soft, neutral base that supports readability and gives the interface a clean, welcoming feel. The secondary colour #0a523d adds contrast and structure, used for key elements like the main container. For accents and interactive components, I selected highlight colours #ff902a and #9e470d, which bring warmth and energy to the interface. Together, these colours help create a cohesive and engaging user experience that reflects the visual identity of the application.
-![Colour Scheme](base/static/base/images/colour_scheme.png)
+![Colour Scheme](static/images/colour_scheme.png)
 
 ---
 
 ### DataBase Diagram
-Image of the database diagram for your project, you can name your database models as well and how they are connected
+![ERD](static/images/colour_scheme.png)
 
 ## Features:
 This web application includes a complete set of features designed to support efficient task management through a clean, responsive interface. Built with Django, it offers full CRUD functionality, allowing users to:
@@ -148,30 +148,23 @@ All features were planned and tracked using a GitHub Projects Kanban board, supp
 ---
 
 ## Testing
-Important part of your README!!!
-### Google's Lighthouse Performance
-Screenshots of certain pages and scores (mobile and desktop)
-### Browser Compatibility
-Check compatability with different browsers
-### Responsiveness
-Screenshots of the responsivness, pick few devices
-### Code Validation
-Validate your code HTML, CSS, JS & Python (all pages/files need to be validated!!!), display screenshots
-### Manual Testing user stories
-Test all your user stories, you an create table 
-User Story |  Test | Pass
---- | --- | :---:
-paste here you user story | what is visible to the user and what action they should perform | &check;
-attach screenshot
-### Manual Testing features
-Test all your features, you can use the same approach 
-| Feature | Action | Status | 
-|:-------:|:--------| :--------|
-| description | user steps | &check; |
-attach screenshot
+
+![python](static/images/python.png)
+![html](static/images/html.png)
+![css](static/images/css.png)
+![lighthouse](static/images/lighthouse1.png)
+![lighthouse](static/images/lighthouse2.png)
+
+I conducted user testing to gather feedback and ensure the application meets usability and functionality standards.
+
+---
 
 ## Bugs
-List of bugs and how did you fix them
+
+The only bugs found in the web app were linting issues.
+![python](static/images/python.png)
+
+--- 
 
 ## Deployment
 This website is deployed to Heroku from a GitHub repository, the following steps were taken:
