@@ -8,6 +8,8 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 
 from .models import Task
 
@@ -18,6 +20,7 @@ class CustomLoginView(LoginView):
     redirect_authenticated_user = True
 
     def get_success_url(self):
+        # messages.success(self.request, 'You have successfully logged in')
         return reverse_lazy('tasks')
     
     
@@ -35,6 +38,7 @@ class RegisterPage(FormView):
 
     def get(self, *args, **kwargs):
         if self.request.user.is_authenticated:
+            messages.success(self.request, 'You are already registered and logged in')
             return redirect('tasks')
         return super(RegisterPage, self).get(*args, **kwargs)
 
@@ -67,18 +71,28 @@ class TaskCreate(LoginRequiredMixin, CreateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
+   
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, 'Task created successfully')
         return super(TaskCreate, self).form_valid(form)
+    
 
-
-class TaskUpdate(LoginRequiredMixin, UpdateView):
+class TaskUpdate(SuccessMessageMixin, LoginRequiredMixin, UpdateView):
     model = Task
     fields = ['title', 'description', 'complete']
     success_url = reverse_lazy('tasks')
+    success_message = "Task updated successfully"   
+    
 
-class DeleteView(LoginRequiredMixin, DeleteView):
+class TaskDelete(LoginRequiredMixin, DeleteView):
     model = Task
     context_object_name = 'task'
     success_url = reverse_lazy('tasks')
+
+    def delete(self, request, *args, **kwargs):
+        # use self.request for consistency
+        print("DEBUG: Deleting task, adding message", request.user)
+        messages.add_message(request, messages.SUCCESS, "Task deleted succesfully")
+        return super(TaskDelete, self).delete(request, *args, **kwargs)
